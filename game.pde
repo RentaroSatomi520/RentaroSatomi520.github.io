@@ -1,5 +1,5 @@
 void setup(){
-  size(600, 1000);
+  size(400, 400);
   frameRate(60);
 }
 
