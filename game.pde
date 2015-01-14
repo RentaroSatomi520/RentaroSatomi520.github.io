@@ -89,9 +89,9 @@ var startScene = function(){
     background(255, 255, 255);
     fill(0, 0, 0);
     textSize(20);
-    text("My Program", 150, 100, 400, 400);
+    text("My Program", 130, 100, 400, 400);
     textSize(10);
-    text("Type 'Start' to Start!", 120, 300, 400, 400);
+    text("Type 'Start' to Start!", 100, 300, 400, 400);
 };
 
 var checkButton = function(){
