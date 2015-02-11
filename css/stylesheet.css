@@ -31,9 +31,11 @@ a:link {
       
     }
     #imagetop{
-      background-color:orange;
-      margin:20px;
-      padding:20px;
+        text-align:center;
+        background-color:orange;
+        color:white;
+        margin=30px;
+        padding=10px;
     }
     #site{
       
