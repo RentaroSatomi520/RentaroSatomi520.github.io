@@ -18,39 +18,34 @@ a:link {
         background-color:transparent;
         text-decoration:underline;
     }
-    #link1{
-      
-    }
-    #top{
-      background-color:white;
-      margin:20px;
-      padding:20px;
-      text-align:center;
-    }
-    #middletop{
-      
-    }
-    #imagetop{
-        text-align:center;
-        background-color:orange;
-        color:white;
-        margin=30px;
-        padding=10px;
-    }
-    #site{
-      
-    }
-    #paragraph{
-      
-    }
-    #list{
-      
-    }
-    body {background-color:orange;}
-    h1 {background-color:black;}
-    p#pInter01 {
-      background-color:green;
-      border: 1px solid black;
-      padding: 10px;
-      margin: 30px;
-    }
+    .login{
+    text-align:center;
+}
+.ideas{
+    text-align:center;
+}
+.list{
+    width:70%;
+    margin:0 auto;
+    text-align:center;
+}
+.page{
+    margin:2px;
+}
+
+.heading{
+    text-align:center;
+    font:italic bold 20px Georgia, serif;
+}
+
+.updates{
+    text-align:center;
+    font:italic bold 15px Georgia, serif;
+}
+
+.input{
+    text-align:center;
+}
+.pagebottom{
+    text-align:center;
+}
