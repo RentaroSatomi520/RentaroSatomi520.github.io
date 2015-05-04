@@ -1,12 +1,127 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pong</title>
-        <link rel="stylesheet" href="css/pong.css" type="text/css" />
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
+        <title>The Rentated</title>
+        <link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     </head>
     <body>
-        <h1 class="pong">Pong</h1>
-        <canvas id="pong_game" height=600  width=600 class="pong_canvas" data-processing-sources="game.pde"></canvas>
+        <div class="page">
+            <div class="pagetop">
+                <div class="heading">
+                    <h1>The Rentated</h1>
+                    <p>This site basicailly contains stuff I find interesting, and my games/stories/lore(that I've created).</p>
+                    <p>I'm a programmer, Japanese Speaker, computer-tech guy, and clarinet player. 
+                    I know  some Java, C++, html and css, Javascript, SQL, Ruby, Python, C and C#.
+                    Java is my speciality however out of all the languages a stated above
+                    I know hiragana, some katakana.
+                    For any fellow programmers out there, or Japanese speakers out there email me at kennystepney@hotmail.com 
+                    </p>
+                </div>
+            </div>
+            <div class="login">
+                <label>Username: </label><input type="text" id="username"/>
+                <br>
+                <label>Password: </label><input type="text" id="password"/>
+                <br>
+                <button type="button" id="login_button" onclick="login()">Login</button>
+                <a href="https://therentated-rentarosatomi520.c9.io/login.html"><p>No Account?</p></a>
+            </div>
+            <div class="pagemiddle">
+                <div class="updates">
+                    <h1>News</h1>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                learning Ruby on Rails, as well as finshed learning SQL.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pagebottom">
+                <div class="ideas">
+                    <h1>Death Souled</h1></h1>
+                    <p>
+                        <hr>
+                        -Asleep World: terminalogy used to describe what happens in the world of the dead.<br>
+                        <br><hr>
+                        -Undeaths: People who attempt to escape Reapers, as well as death.<br>
+                        -Death Omens: People who have successfully escaped Reapers and cause havoc as well as distress to Reapers(Strong as well).<br>
+                        -Spectrals: People who have died but don't want to escape death, wants to pass on.<br>
+                        -Overseers: People who point Reapers to locations where someone has died, as well as manage Reapers. Not all Reapers have overseers. Overseers are typically veteran Reapers, but can be angels. Overseers work in colabration with Reapers in divisions.<br>
+                        -Reapers(slang:Reapes): People who make sure the dead, die, and hunt down those who escape death. ""Bad" People who have died, but his/her actions where "made up" and deem not so horrible that they have a choice, burn in the eternal pits of
+                        damnation, or be the Earth's personal janitor" - Pixel. Reapers who don't do their jobs, get hunted by angels, and sent to the void(basicailly killed).<br>
+                        -Asleep(applies to aniamls as well): People who are "dead" but don't fall in any of the other classification stated, typically live in Hell.<br>
+                        -Angels: People who were "good" in their lifetime and live in heaven. typically look down on the on all others. <br>
+                        -*Applies to all: eternal youth.<br>
+                        -Awake(applies to animals as well): Anything the qualifies as "living", and is unaware of anything happening in the "asleep world", nor can they see it.<br>
+                        <br><hr>
+                        -Hell: Where the Awake who are determined to be "wrong" go and become Asleeps.<br>
+                         *Although they need a reaper to direct them to Hell, this is where most of the awakes who don't want to die attempt to run away. <br>
+                        -Heaven: Where the Awake that have done good in their life and become Angels, typically a paradise. Don't need reapers to direct to heaven. <br>
+                            *Reapers aren't allowed in heaven, in fact the only things that are allowed in heavon are angels.<br>
+                        -Oblivion: The main "meeting place" for the Reapers, typically where most of them live, exchange stories, and gear, etc. Although most busy Reapers live in the surface, the "Awake World"(example: Pixel).<br>
+                        -Void: Since Reapers, angels, asleep, Undeaths and Death Omens are already dead, if the manage to die again, they go to the void, a bottomless pit of nothingness. No one knows that "already dead", go to the void, much like how humans don't know what happens when they die. Most assume the just disappear. <br>
+                        *The Undeaths souls that are "captured" by Reapers are sent to Hell, but if they are "killed" by a Reaper it goes to the Void.<br>
+                        <br><hr>
+                        -Number of Reapers and Undeaths are skewed(due to the large amounts of deaths recently(wars, killing)).<br>
+                        -Due to this Reapers with the new "transform act" allows them to make spectrals and Undeaths into reapers.<br>
+                        <br><hr>
+                        -Monmouth(2016): the main setting of this story, a decently sized city which gives people a false sense of tranquilty and serene, whne really it is crawling with death. <br>
+                        -Java n Script: the protagonist's favorite dual library and tea shop.<br>
+                        -Divisons: all divisions have a overseer and atleast 1 reaper.<br>
+                        <br><hr>
+                        <strong>-Pixel(pronounced how it looks): The main protagonist who is a reaper, and has a quite a bit of experience. All of his colleagues have died, making him the only Reaper in Monmouth. This puts a lot of stress on him and his overseer.</strong><br>
+                            *<strong>Personality</strong>: Calm and friendly, but sometimes pessimistic and glooming when talking about the current state of things, or his past. Isn't that muchof a talker, but will typically continue a conversion/explanation.<br>
+                            *Background: Pixel became a reaper in 1333(age 22) after he was killed in the <bold>Wars Of Scottish Independence</bold>. He and a lot of others were then assigned to a Nithen Divison in order to help balance and maintain(the skewed)amount of Undeaths and Death Omens. Pixel is the only one alive from this "mass recruiting" and works his butt off nowadays, to attempt to keep everything in order. Outside of his reaper job, he also has a human job as a writer. Likes to visit his favorite tea/library shop, "Tea n Script" during his free time.<br>
+                            *Weapons: A huge excutioner's axe, swings around with ease.<br>
+                            *Apearance:<br>
+                                *Awake: Wears a black hoodie with laces on the side, along with a grey shirt stating "I write for monies(on purpose)". Wears black jeans with a chain connecting his wallet to his pants. Has short cut brown "mop" hair, with a single purple highlight in the front. Brown eyes.<br>
+                                *Reaper: (Awake cannot see) Wears a "shadowy" darkness emitting robe, hood and wings, like alll the other Reapers. Eyes turn red with black pupils. Retains the rest of his Awake appearance.<br>
+                                <br><hr>
+                        <strong>-Nithen(pronounced N-ee-the-in): The overseer Pixel and the head overseer of the Hithen Divison , helps him locate Death Omens as well as people who have died.</strong> <br>
+                            *Personality: Harsh and stern, loves to tease and insult Pixel about his work ethic. Extreme desperate for some new REapers to help out Pixel<br>
+                        <br><hr>
+                        <strong>-Lina: The second reaper who is part of the Nithen Division. Was recruited when Pixel decided to spare Lina for going to hell. Lina was a Undeath before becoming a reaper.</strong><br>
+                    </p>
+                </div>
+                <div class="currentprojects">
+                    <h1>Current Projects</h1>
+                    <h3>Endless Space</h3>
+                    <p>
+                        Everything isn't peaceful in space, as warring factions continue to fight
+                        more and more casualties occur across all races.
+                    </p>
+                    <h3>Club Empire</h3>
+                    <h3>Lands of Daxiqhtn</h3>
+                    <img src="http://i60.tinypic.com/qz2opg.jpg" alt="Funny" width="700" height="400"></img>
+                    <p>The land of Daxiqhtn, home to many races, and many locations. Daxiqhtn is split into 12 different states, and those states
+                    were organized into 4 providences. Those providences were rxloo uaax',jdyle, chids.
+                    </p>
+                </div>
+                <div class="comments">
+                    <p>Comments:</p>
+                    <input type="text" id="comments"/>
+                    <br>
+                    <button type="button" id="comment_button" onclick="submit()">Submit</button>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var username, comment; 
+            function append_update(){
+                
+            }
+            
+            function submit(){
+                comment = document.getElementById('comments').value;
+            }
+            
+            function login(){
+                
+            }
+        </script>
+        <script type="text/javascript" src="js/site.js"></script>
     </body>
 </html>
